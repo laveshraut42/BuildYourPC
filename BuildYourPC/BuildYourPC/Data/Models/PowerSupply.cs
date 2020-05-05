@@ -16,5 +16,11 @@ namespace BuildYourPC.Data.Models
         //Personal
         public string ProtectionLevel { get; set; }
         public int Power { get; set; }
+
+        public string PersonalToString()
+        {
+            return "ProtectionLevel: " + ProtectionLevel.ToString() + " \n" +
+                   "Power: " + Power.ToString() + " \n";
+        }
     }
 }

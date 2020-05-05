@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="streak row">
+            <div class="col-12 justify-content-start">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="justify-content-start">
+
+            </div>
+
+            <textarea class="tile col-3 justify-content-start">
+                @{ 
+                     @Model.Cpu.PersonalToString(); //how call public?
+                 }
+            </textarea>
+
+            <div class="col-6 justify-content-start">
+
+            </div>
+
+            <textarea class="tile col-3 justify-content-start">
+                @{ 
+                     @Model.Motherboard.PersonalToString(); //how call public?
+                 }
+            </textarea>
+
+            <div class="justify-content-end">
+
+            </div>
+        </div>
+
+        <div class="streak row">
+            <div class="col-12 justify-content-start">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="justify-content-start">
+
+            </div>
+
+            <textarea class="tile col-3 justify-content-start">
+                @{ 
+                     @Model.RAM.PersonalToString(); //how call public?
+                 }
+            </textarea>
+
+            <div class="col-6 justify-content-start">
+
+            </div>
+
+            <textarea class="tile col-3 justify-content-start">
+                @{ 
+                     @Model.GraphicCard.PersonalToString(); //how call public?
+                 }
+            </textarea>
+
+            <div class="justify-content-end">
+
+            </div>
+        </div>
+
+        <div class="streak row">
+            <div class="col-12 justify-content-start">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="justify-content-start">
+
+            </div>
+
+            <textarea class="tile col-3 justify-content-start">
+                @{ 
+                     @Model.Memory.PersonalToString(); //how call public?
+                 }
+            </textarea>
+
+            <div class="col-6 justify-content-start">
+
+            </div>
+
+            <textarea class="tile col-3 justify-content-start">
+                @{ 
+                     @Model.PowerSupply.PersonalToString(); //how call public?
+                 }
+            </textarea>
+
+            <div class="justify-content-end">
+
+            </div>
+        </div>
+
+        <div class="streak row">
+            <div class="col-12 justify-content-start">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -21,5 +21,14 @@ namespace BuildYourPC.Data.Models
         public string Interfaces { get; set; }
         public string PowerType { get; set; }
 
+        public string PersonalToString()
+        {
+            return "Power consumption: " + PowerConsumption.ToString() + " \n" +
+                   "GRAMCount: " + GRAMCount.ToString() + " \n" +
+                   "GRAMAge: " + GRAMAge.ToString() + " \n" +
+                   "GPU: " + GPU + " \n" +
+                   "Interfaces: " + Interfaces + " \n" +
+                   "PowerType: " + PowerType + " \n";
+        }
     }
 }

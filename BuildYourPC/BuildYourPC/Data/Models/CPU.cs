@@ -23,5 +23,14 @@ namespace BuildYourPC.Data.Models
         public string RamAge { get; set; }
         public int RamFrequency { get; set; }
         public int RamStrings { get; set; }
-}
+
+        public string PersonalToString()
+        {
+            return "Power consumption: " + PowerConsumption.ToString() + " \n" +
+                   "Cores: " + CoresCount.ToString() + " \n" + 
+                   "Frequency: " + Frequency.ToString() + " \n" + 
+                   "Chipset: " + Chipset + " \n" + 
+                   "RAM: " + RamAge + ", " + RamFrequency.ToString() + ", " + RamStrings.ToString();
+        }
+    }
 }

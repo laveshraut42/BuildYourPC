@@ -17,5 +17,12 @@ namespace BuildYourPC.Data.Models
         public string Amount { get; set; }
         public string Type { get; set; }
         public string ConnectionInterface { get; set; }
+
+        public string PersonalToString()
+        {
+            return "Amount: " + Amount.ToString() + " \n" +
+                   "Type: " + Type.ToString() + " \n" +
+                   "ConnectionInterface: " + ConnectionInterface.ToString();
+        }
     }
 }

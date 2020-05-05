@@ -19,5 +19,14 @@ namespace BuildYourPC.Data.Models
         public int Amount { get; set; }
         public int Pieces { get; set; }
         public string Timings { get; set; }
+
+        public string PersonalToString()
+        {
+            return "Frequency: " + Frequency.ToString() + " \n" +
+                   "Age: " + Age.ToString() + " \n" +
+                   "Amount: " + Amount.ToString() + " \n" +
+                   "Pieces: " + Pieces + " \n" +
+                   "Timings: " + Timings + " \n";
+        }
     }
 }

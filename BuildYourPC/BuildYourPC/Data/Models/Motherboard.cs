@@ -19,5 +19,14 @@ namespace BuildYourPC.Data.Models
         public string RAMAge { get; set; }
         public int RAMStrings { get; set; }
         public int RAMSockets { get; set; }
+
+        public string PersonalToString()
+        {
+            return "Chipset: " + Chipset.ToString() + " \n" +
+                   "Socket: " + Socket.ToString() + " \n" +
+                   "RAMAge: " + RAMAge.ToString() + " \n" +
+                   "RAMStrings: " + RAMStrings + " \n" +
+                   "RAMSockets: " + RAMSockets;
+        }
     }
 }

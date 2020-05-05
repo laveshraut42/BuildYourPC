@@ -1,0 +1,23 @@
+body
+{
+	background-image: url('/img/f3.jpg');
+	background-color: #FFE4B5;
+	height: 100%;
+}
+
+.tile
+{
+	background-color: white;
+	height: 250px;
+	border: 3px solid red;
+}
+
+.streak
+{
+	height: 50px;
+}
+
+.column
+{
+	width: 50px;
+}
